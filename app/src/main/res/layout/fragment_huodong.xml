@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.guanzhongwang.fragment.HuodongFragment">
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:background="#FF7320"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+         <TextView
+             android:id="@+id/text_quanguo"
+             android:text="全国"
+             android:textColor="#fff"
+             android:layout_centerVertical="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/text_quanguo"
+            android:layout_toRightOf="@+id/text_quanguo"
+            android:src="@drawable/xiafan" />
+         <TextView
+             android:text="观众网"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:textSize="16sp"
+             android:textColor="#fff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <ImageView
+             android:src="@drawable/sousou16"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:padding="8dp"
+             android:id="@+id/image_sousuo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayoutid"
+        app:tabTextColor="#B7B7B7"
+        app:tabSelectedTextColor="#FF6508"
+        app:tabIndicatorColor="#FF6508"
+        app:tabMode="scrollable"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerid"
+        android:layout_width="match_parent"
+        android:layout_weight="18"
+        android:layout_height="0dp"
+        ></android.support.v4.view.ViewPager>
+
+</LinearLayout>

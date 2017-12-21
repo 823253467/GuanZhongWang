@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.guanzhongwang.fragment.WodeFragment">
+    <TextView
+        android:id="@+id/text_tuichu"
+        android:layout_gravity="end"
+        android:text="退出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <ImageView
+       android:id="@+id/btn_image"
+       android:layout_gravity="center"
+       android:src="@drawable/wdltimg"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/textdengluming"
+        android:text="未登录"
+        android:textSize="21dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:background="@drawable/wodetupian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
